@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="2">
+    <tr>
+        <td>
+            <p>
+            <b>reteta de clatite</b>
+            </p>
+        </td>
+        <td>
+            <img src="images/clatite.png">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p><b>ingrediente</b>
+            <ul>
+            <li>350 faina</li>
+            <li>3 oua</li>
+            <li>50 g unt topit</li>
+            <li>500 ml lapte rece</li>
+            <li>250ml apa minerala</li>
+            <li>un praf de sare</li>
+            <li>optional: vanilie, coaja de lamaie</li>
+            <li>ulei pentru prajit</li>
+        </ul>
+            </p>
+        </td>
+        <td>
+            <ol>
+                <li><b>Timp de preparare</b> 10 minute</li>
+                <li><b>Timp de gatire</b> 2 minute</li>
+                <li><b>Timp total</b> 12 minute</li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p><b>formular</b></p>
+            <form action="formular.php" method="post">
+                <label for="nume-si-prenume">nume si prenume</label>
+                <input type="text" id="nume-si-prenume" name="nume-si-prenume" placeholder="numele tau" required><br>
+                <label for="email">adresa de email</label>
+                <input type="email" id="email" name="email" placeholder="Emailul tau" required><br>
+                <label for="varsta">adresa de email</label>
+                <select name="varsta" id="varsta">
+                    <option value="v1">15-21 ani</option>
+                    <option value="v2">22-28 ani</option>
+                    <option value="v3">29-35 ani</option>
+                </select>
+                <br>
+                <br>
+                <input type="reset" value="Reset">
+                <input type="submit">
+
+            </form>
+        </td>
+        <td>
+            <br>
+            <b>masini preferate</b>
+            <form action="formular.php" method="post">
+                <input type="radio" name="masini" id="car1">
+                <label id="car1">bmw</label><br>
+                <input type="radio" name="masini" id="car2">
+                <label id="car2">audi</label><br>
+                <input type="radio" name="masini" id="car3">
+                <label id="car3">volvo</label><br>
+                <input type="radio" name="masini" id="car4">
+                <label id="car4">mercedes</label><br>
+                <input type="reset">
+            </form>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
