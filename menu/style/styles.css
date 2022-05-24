@@ -11,7 +11,7 @@
     left: 80px;
     top: 0; }
     .menu .level1 .item .level2 .item {
-      background: pink;
+      background: blue;
       position: relative; }
       .menu .level1 .item .level2 .item .level3 {
         display: none;
@@ -19,27 +19,42 @@
         left: 0;
         top: 30px; }
         .menu .level1 .item .level2 .item .level3 .item {
-          background: lime;
+          background: greenyellow;
           position: relative; }
           .menu .level1 .item .level2 .item .level3 .item .level4 {
             display: none;
             position: absolute;
             top: 0;
             left: 80px; }
-            .menu .level1 .item .level2 .item .level3 .item .level4 .level5 {
-              display: none;
-              position: absolute;
-              top: 30px;
-              left: 30px; }
-              .menu .level1 .item .level2 .item .level3 .item .level4 .level5 .item {
-                background: darkblue;
-                position: relative; }
-            .menu .level1 .item .level2 .item .level3 .item .level4:hover .level5 {
-              display: block; }
-          .menu .level1 .item .level2 .item .level3 .item:hover .level4 {
-            display: flex; }
-      .menu .level1 .item .level2 .item:hover .level3 {
-        display: block; }
+            .menu .level1 .item .level2 .item .level3 .item .level4 .item {
+              background: firebrick;
+              position: relative; }
+              .menu .level1 .item .level2 .item .level3 .item .level4 .item .level5 {
+                display: none;
+                position: absolute;
+                top: 30px;
+                left: 0; }
+                .menu .level1 .item .level2 .item .level3 .item .level4 .item .level5 .item {
+                  background: darkblue;
+                  position: relative; }
+                  .menu .level1 .item .level2 .item .level3 .item .level4 .item .level5 .item:hover {
+                    background: blue;
+                    color: white; }
+              .menu .level1 .item .level2 .item .level3 .item .level4 .item:hover {
+                background: grey;
+                color: white; }
+                .menu .level1 .item .level2 .item .level3 .item .level4 .item:hover .level5 {
+                  display: block; }
+          .menu .level1 .item .level2 .item .level3 .item:hover {
+            background: red;
+            color: white; }
+            .menu .level1 .item .level2 .item .level3 .item:hover .level4 {
+              display: flex; }
+      .menu .level1 .item .level2 .item:hover {
+        background: black;
+        color: white; }
+        .menu .level1 .item .level2 .item:hover .level3 {
+          display: block; }
   .menu .level1 .item:hover {
     background: black;
     color: white; }

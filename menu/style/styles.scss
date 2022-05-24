@@ -4,7 +4,6 @@
       background: red;
       padding: 0;
       margin: 0;
-      ;
       height: 30px;
       position: relative;
       .level2{
@@ -14,7 +13,7 @@
         left: 80px;
         top: 0;
         .item{
-          background: pink;
+          background: blue;
           position: relative;
           .level3{
             display: none;
@@ -22,30 +21,42 @@
             left: 0;
             top: 30px;
             .item{
-              background: lime;
+              background: greenyellow;
               position: relative;
-              .level4{
+              .level4 {
                 display: none;
                 position: absolute;
                 top: 0;
                 left: 80px;
+                .item {
+                  background: firebrick;
+                  position: relative;
                 .level5{
                   display: none;
                   position: absolute;
                   top: 30px;
-                  left: 30px;
-                  .item{
+                  left: 0;
+                  .item {
                     background: darkblue;
                     position: relative;
+                  &:hover {
+                    background: blue;
+                    color: white;
+                  }
                   }
                 }
-                &:hover{
-                  .level5{
+                &:hover {
+                  background: grey;
+                  color: white;
+                  .level5 {
                     display: block;
                   }
                 }
+                }
               }
               &:hover{
+                background: red;
+                color: white;
                 .level4{
                   display: flex;
                 }
@@ -53,6 +64,8 @@
             }
           }
           &:hover{
+            background: black;
+            color: white;
             .level3{
               display: block;
             }
@@ -70,10 +83,5 @@
     }
   }
 }
-
-
-
-
-
 
 .item{width: 80px;}
