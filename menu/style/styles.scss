@@ -1,0 +1,79 @@
+.menu {
+  .level1{
+    .item {
+      background: red;
+      padding: 0;
+      margin: 0;
+      ;
+      height: 30px;
+      position: relative;
+      .level2{
+        display: none;
+        position: absolute;
+        width: 80px;
+        left: 80px;
+        top: 0;
+        .item{
+          background: pink;
+          position: relative;
+          .level3{
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 30px;
+            .item{
+              background: lime;
+              position: relative;
+              .level4{
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 80px;
+                .level5{
+                  display: none;
+                  position: absolute;
+                  top: 30px;
+                  left: 30px;
+                  .item{
+                    background: darkblue;
+                    position: relative;
+                  }
+                }
+                &:hover{
+                  .level5{
+                    display: block;
+                  }
+                }
+              }
+              &:hover{
+                .level4{
+                  display: flex;
+                }
+              }
+            }
+          }
+          &:hover{
+            .level3{
+              display: block;
+            }
+          }
+        }
+      }
+      &:hover {
+        background: black;
+        color: white;
+        .level2{
+          display: flex;
+        }
+      }
+
+    }
+  }
+}
+
+
+
+
+
+
+.item{width: 80px;}

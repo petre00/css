@@ -1,0 +1,52 @@
+.menu .level1 .item {
+  background: red;
+  padding: 0;
+  margin: 0;
+  height: 30px;
+  position: relative; }
+  .menu .level1 .item .level2 {
+    display: none;
+    position: absolute;
+    width: 80px;
+    left: 80px;
+    top: 0; }
+    .menu .level1 .item .level2 .item {
+      background: pink;
+      position: relative; }
+      .menu .level1 .item .level2 .item .level3 {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 30px; }
+        .menu .level1 .item .level2 .item .level3 .item {
+          background: lime;
+          position: relative; }
+          .menu .level1 .item .level2 .item .level3 .item .level4 {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 80px; }
+            .menu .level1 .item .level2 .item .level3 .item .level4 .level5 {
+              display: none;
+              position: absolute;
+              top: 30px;
+              left: 30px; }
+              .menu .level1 .item .level2 .item .level3 .item .level4 .level5 .item {
+                background: darkblue;
+                position: relative; }
+            .menu .level1 .item .level2 .item .level3 .item .level4:hover .level5 {
+              display: block; }
+          .menu .level1 .item .level2 .item .level3 .item:hover .level4 {
+            display: flex; }
+      .menu .level1 .item .level2 .item:hover .level3 {
+        display: block; }
+  .menu .level1 .item:hover {
+    background: black;
+    color: white; }
+    .menu .level1 .item:hover .level2 {
+      display: flex; }
+
+.item {
+  width: 80px; }
+
+/*# sourceMappingURL=styles.css.map */
