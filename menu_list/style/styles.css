@@ -2,13 +2,16 @@ ul{
     list-style: none;
     padding: 0;
     margin: 0;
+    top: 0;
     width: 80px;
+    border-bottom: 0;
 }
 li {
     position: relative;
-    padding: 10px;
-    margin-bottom: 5px;
     border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 3px;
+    top: 0;
 }
 
 .level1 li {
@@ -27,27 +30,20 @@ li {
     left: 80px;
 }
 
-.level1 li:hover .level2{
+.level1 li:hover .level2 {
     display: flex;
+
 }
 
-.level2 li{
-    background: blue;
-}
-
-.level3{
+.level3 {
     display: none;
     position: absolute;
     width: 80px;
-    left: 80px;
+    top: 27px;
 }
 
-.level2 li:hover .level3 {
+.level2 li:hover .level3{
     display: block;
-}
-
-.level3 li {
-    background: green;
 }
 
 .level4 {
@@ -57,21 +53,17 @@ li {
     left: 80px;
 }
 
-.level3 li:hover .level4 {
+.level3 li:hover .level4{
     display: flex;
-}
-
-.level4 li {
-    background: darkred;
 }
 
 .level5 {
     display: none;
     position: absolute;
     width: 80px;
-    left: 80px;
+    top: 27px;
 }
 
-.level4 li:hover .level5 {
-    display: flex;
+.level4 li:hover .level5{
+    display: block;
 }
